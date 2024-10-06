@@ -1,6 +1,5 @@
 <script>
 import { ref, onMounted } from "vue";
-import debounce from "lodash/debounce";
 import axios from "axios";
 import { useRouter } from 'vue-router';
 
@@ -81,13 +80,6 @@ export default {
       }
     };
 
-    const debouncedFetch = debounce((query) => {
-      fetchPhotos(query);
-    }, 300);
-
-    const debounceSearch = () => {
-      debouncedFetch(searchQuery.value);
-    };
 
     const openModal = (photo) => {
       selectedPhoto.value = photo;
@@ -113,7 +105,6 @@ export default {
       searchQuery,
       getStyleClass,
       selectedPhoto,
-      debounceSearch,
       openModal,
       closeModal,
       onImageLoad,
