@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import SearchResult from '../views/SearchResult.vue'
 import Home from '../views/Home.vue';
 
+
 const routes = [
   {
     path: '/',
