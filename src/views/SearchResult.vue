@@ -384,14 +384,17 @@ import axios from "axios";
   }
 }
 
-@media (max-width: 768px) {
-  .photo-layout {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
+@media (max-width: 300px) {
+    .grid-container {
+  padding: 0px;
 
-  .photo-card.overlap {
-    margin-top: 0;
+  .photo-layout {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+    margin: 0 auto;
   }
+}
 }
 
 </style>

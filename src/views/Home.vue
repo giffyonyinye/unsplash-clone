@@ -440,7 +440,6 @@ background: #ecf3f6;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 40px;
-    // max-width: 1000px;
     margin: 0 auto;
   }
 }
